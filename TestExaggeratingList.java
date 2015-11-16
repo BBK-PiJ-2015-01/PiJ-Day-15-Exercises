@@ -17,7 +17,19 @@ public class TestExaggeratingList {
 	}
 	
 	@Test
-	public void standardMethodTest() {
+	public void emptyListSizeTest() {
 		
+		int expected = 0;
+		int result = instance.size();
+		assertEquals(expected, result);
+	}
+	
+	@Test
+	public void singleListSizeTest() {
+		
+		int expected = 2;
+		instance.add(1);
+		int result = instance.size();
+		assertEquals(expected, result);
 	}
 }

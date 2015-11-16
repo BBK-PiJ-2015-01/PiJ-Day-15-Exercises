@@ -133,7 +133,7 @@ public class ExaggeratingList<T> implements List<T>{
 	
 	public int size() {
 		
-		return underlying.size();
+		return 2 * underlying.size();
 	}
 	
 	public void sort(Comparator<? super T> c) {
